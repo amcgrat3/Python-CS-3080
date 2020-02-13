@@ -1,4 +1,7 @@
 # Andrew McGrath
+# 02/12/2020
+# amcgrat3@uccs.edu
+# Script for HW1
 
 # Part 1
 studentCount = input("How many students are in the class?")  # Read in number of students
