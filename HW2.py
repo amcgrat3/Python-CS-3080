@@ -1,5 +1,5 @@
 # Andrew McGrath
-# 02/20/2020
+# 02/21/2020
 # amcgrat3@uccs.edu
 # Script for HW 2: Working with dictionaries and drawing shapes
 
