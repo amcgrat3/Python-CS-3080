@@ -13,14 +13,14 @@ import datetime
 ###################################################################
 
 exercise = -1
-while (exercise != 0):
+while exercise != 0:
     exercise = int(input("Which exercise would you like to test (1-6, 0 to exit)? "))
 
     #####################################################
     # Exercise 1:
     #####################################################
     if exercise == 1:
-        req = requests.get("https://automatetheboringstuff.com/files/rj.txt") # Get the text file
+        req = requests.get("https://automatetheboringstuff.com/files/rj.txt")  # Get the text file
 
         # Check the status code of the request
         if req.status_code == requests.codes.ok:
@@ -50,7 +50,7 @@ while (exercise != 0):
         file.close()
         file = open("Lab_6_File.txt", "r")
 
-        content = file.readlines() # Read lines from file
+        content = file.readlines()  # Read lines from file
 
         # Get lines 50-59
         for line in content[50:60]:
@@ -63,7 +63,7 @@ while (exercise != 0):
     #####################################################
     elif exercise == 3:
         req = requests.get("https://www.futureme.org/")
-        req.raise_for_status() # Checks for 'ok' status
+        req.raise_for_status()  # Checks for 'ok' status
 
         # bs4 call from pptx
         soup = bs4.BeautifulSoup(req.text, features="html.parser")
@@ -94,7 +94,6 @@ while (exercise != 0):
         for p in paragraphs:
             print("-" * 40)
             print(p.getText())
-
 
     #####################################################
     # Exercise 5:
